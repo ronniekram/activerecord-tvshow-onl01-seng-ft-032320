@@ -18,8 +18,7 @@ class Show < ActiveRecord::Base
   end 
   
   def ratings_sum
-    sum = Show.sum('rating')
-    sum
+    Show.sum("rating")
   end 
   
   def popular_shows
